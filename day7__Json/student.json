@@ -1,0 +1,12 @@
+import json
+
+json_string = ""
+{
+		"first_name": "sylvester ",
+		"last_name": "fernandes",
+		"department": "CSE",
+		"research areas": ["ml", "newspaper"],
+		"contact details": [{
+			"mobile": 198765432,
+			"email": "gsss@gmail.com"
+		}

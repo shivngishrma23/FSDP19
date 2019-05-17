@@ -1,0 +1,26 @@
+import json
+
+json_string = ""
+[{
+		"faculty": {
+			"first_name": "yogendra ",
+			"last_name": "singh",
+			"department": "CSE",
+			"research areas": ["app", "newspaper"],
+			"contact details": [{
+				"mobile": 123456789,
+				"email": "ss@gmail.com"
+			}]
+		}
+	},
+	{
+		"first_name": "sylvester ",
+		"last_name": "fernandes",
+		"department": "CSE",
+		"research areas": ["ml", "newspaper"],
+		"contact details": [{
+			"mobile": 198765432,
+			"email": "gsss@gmail.com"
+		}]
+	}
+]
