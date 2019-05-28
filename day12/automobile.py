@@ -1,20 +1,22 @@
+
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 
-df = pd.read_csv('automobile.csv')
+# Reading CSV file
+dataset = pd.read_csv('Automobile.csv')
 
-print(df)
-# to remove mising value from price columns
-df['price'] = df['price'].fillna(df['price'].mean())
- 
-a = np.array(df['price'])
+# Replacing the blank space with nan (Not a Number)
+dataset["price"][dataset["price"] == '  '] = 'nan'
 
-print(df['price'].max())
+# Converting the datatype of price column from object to flaot
+dataset["price"] = dataset["price"].astype(float)
 
-print(df['price'].min())
+# Filling the missing values with average of price column
+dataset["price"] = dataset["price"].fillna(dataset["price"].mean())
 
-print(df['price'].mean())
+# Converting the price column into a numpy.ndarray
+price_numpy_array = dataset["price"].values
 
-
-print(df['price'].std())
+print ( "Minimum Price is {0}".format( dataset["price"].min() ) )
+print ( "Maximum Price is {0}".format( dataset["price"].max() ) )
+print ( "Average Price is {0}".format( round( dataset["price"].mean(), 2 ) ) )
+print ( "Standard Deviation of Price is {0}".format( round( dataset["price"].std(), 2 ) ) )

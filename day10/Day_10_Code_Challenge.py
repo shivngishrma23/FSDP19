@@ -15,7 +15,7 @@ Code Challenge 2
 
 I-Card Generation System
 
-Write a Python code for a system that generates I-card for all studentsof Forsk
+Write a Python code for a system that generates I-card for all students of Forsk
 Summer Developer Program and store them in image format. 
 
 It must take names and other required information from the user.
